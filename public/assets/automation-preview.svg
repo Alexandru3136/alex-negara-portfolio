@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Automation workflow preview">
+  <rect width="960" height="540" fill="#f6f6f2"/>
+  <rect x="72" y="72" width="816" height="396" rx="8" fill="#ffffff" stroke="#deded8"/>
+  <g fill="#0f766e" font-family="Arial, sans-serif" font-weight="700">
+    <text x="112" y="132" font-size="30">Warranty Automation Workflow</text>
+    <text x="112" y="170" font-size="16" fill="#61656b">Client request -> Telegram bot -> Tracking database -> AI review -> Human confirmation</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-weight="700">
+    <rect x="112" y="240" width="140" height="76" rx="8" fill="#edf3f1" stroke="#b8d9d3"/>
+    <text x="144" y="286" font-size="18" fill="#0b5f59">Request</text>
+    <rect x="310" y="240" width="140" height="76" rx="8" fill="#181818"/>
+    <text x="358" y="286" font-size="18" fill="#ffffff">Bot</text>
+    <rect x="508" y="240" width="140" height="76" rx="8" fill="#edf3f1" stroke="#b8d9d3"/>
+    <text x="548" y="286" font-size="18" fill="#0b5f59">Status</text>
+    <rect x="706" y="240" width="140" height="76" rx="8" fill="#edf3f1" stroke="#b8d9d3"/>
+    <text x="745" y="286" font-size="18" fill="#0b5f59">AI Review</text>
+  </g>
+  <g stroke="#0f766e" stroke-width="4" stroke-linecap="round">
+    <path d="M252 278h58"/>
+    <path d="M450 278h58"/>
+    <path d="M648 278h58"/>
+  </g>
+</svg>

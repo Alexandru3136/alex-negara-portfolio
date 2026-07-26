@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Portofoliu</title>
+    <link rel="stylesheet" href="/styles.css?v=10">
+  </head>
+  <body class="admin-page">
+    <header class="site-header">
+      <a class="brand" href="/">
+        <span class="brand-mark">P</span>
+        <span>Admin</span>
+      </a>
+      <nav class="nav-links" aria-label="Navigare admin">
+        <a href="/">Public</a>
+        <button class="text-button hidden" id="logoutButton" type="button">Logout</button>
+      </nav>
+    </header>
+
+    <main class="admin-shell">
+      <section class="login-panel" id="loginPanel">
+        <p class="eyebrow">Acces privat</p>
+        <h1>Autentificare admin</h1>
+        <form id="loginForm" class="stacked-form">
+          <label>
+            Parola
+            <input name="password" type="password" autocomplete="current-password" required>
+          </label>
+          <button class="primary-button" type="submit">Intra in panou</button>
+          <p class="form-message" id="loginMessage" role="status"></p>
+        </form>
+      </section>
+
+      <section class="admin-panel hidden" id="adminPanel">
+        <div class="section-heading admin-heading">
+          <div>
+            <p class="eyebrow">Administrare</p>
+            <h1>Proiecte</h1>
+          </div>
+          <button class="primary-button" id="newProjectButton" type="button">Proiect nou</button>
+        </div>
+
+        <div class="admin-layout">
+          <form class="project-form" id="projectForm">
+            <input type="hidden" name="id">
+            <label>
+              Nume proiect
+              <input name="name" type="text" required>
+            </label>
+            <label>
+              Descriere
+              <textarea name="description" rows="5" required></textarea>
+            </label>
+            <label>
+              Detalii extinse
+              <textarea name="details" rows="5" placeholder="Context, proces, ce ai construit concret"></textarea>
+            </label>
+            <label>
+              Problema / challenge
+              <textarea name="challenge" rows="3" placeholder="Ce problema rezolva proiectul?"></textarea>
+            </label>
+            <label>
+              Rezultat / outcome
+              <textarea name="outcome" rows="3" placeholder="Ce rezultat a produs sau ce valoare aduce?"></textarea>
+            </label>
+            <label>
+              Categorie
+              <select name="category" required>
+                <option value="automation">Automatizari si AI Workflows</option>
+                <option value="web">Aplicatii web si site-uri</option>
+              </select>
+            </label>
+            <label>
+              Media
+              <input name="mediaUrl" type="text" placeholder="/assets/project.png sau https://...">
+            </label>
+            <label>
+              Tip media
+              <select name="mediaType">
+                <option value="image">Screenshot / imagine</option>
+                <option value="video">Video</option>
+              </select>
+            </label>
+            <label>
+              Tehnologii
+              <input name="technologies" type="text" placeholder="HTML, CSS, JavaScript">
+            </label>
+            <label>
+              Link 1 - Eticheta
+              <input name="linkLabel1" type="text" placeholder="Demo">
+            </label>
+            <label>
+              Link 1 - URL
+              <input name="linkUrl1" type="url" placeholder="https://...">
+            </label>
+            <label>
+              Link 2 - Eticheta
+              <input name="linkLabel2" type="text" placeholder="Cod">
+            </label>
+            <label>
+              Link 2 - URL
+              <input name="linkUrl2" type="url" placeholder="https://...">
+            </label>
+            <div class="form-actions">
+              <button class="primary-button" type="submit">Salveaza</button>
+              <button class="secondary-button" id="cancelEditButton" type="button">Curata</button>
+            </div>
+            <p class="form-message" id="projectMessage" role="status"></p>
+          </form>
+
+          <div class="admin-list" id="adminProjectList" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/admin.js?v=10" type="module"></script>
+  </body>
+</html>

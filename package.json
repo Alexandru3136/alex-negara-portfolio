@@ -1,0 +1,20 @@
+{
+  "name": "personal-portfolio-admin",
+  "version": "1.0.0",
+  "description": "Portofoliu personal minimalist cu zona publica si panou admin protejat.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "admin",
+    "json"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alex Negara | Automation & Web Development</title>
+    <meta name="description" content="Freelance software engineer building n8n automations, AI workflows, business websites and lightweight web applications.">
+    <link rel="stylesheet" href="/styles.css?v=18">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Home" data-i18n-attr="aria-label:brandAria">
+        <span class="brand-mark">P</span>
+        <span id="brandName">Portfolio</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#estimate" data-i18n="navEstimate">Estimate</a>
+        <a href="#contact">Contact</a>
+        <a class="admin-link" href="/admin" aria-label="Admin">Admin</a>
+        <div class="language-switcher" aria-label="Language selector" data-i18n-attr="aria-label:languageAria">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="ro" aria-pressed="false">RO</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-copy">
+          <p class="service-line" data-i18n="heroServiceLine">n8n automations, AI workflows and business websites for small teams.</p>
+          <p class="eyebrow" id="profileRole">Developer</p>
+          <h1 id="profileName">Numele Tau</h1>
+          <p id="profileAbout"></p>
+          <div class="hero-actions" id="profileLinks"></div>
+        </div>
+        <aside class="hero-panel" aria-label="Portfolio summary" data-i18n-attr="aria-label:summaryAria">
+          <div class="panel-topline">
+            <span data-i18n="available">Available for collaborations</span>
+            <span class="status-dot" aria-hidden="true"></span>
+          </div>
+          <img class="profile-photo hidden" id="profilePhoto" src="" alt="">
+          <div class="monogram" aria-hidden="true">AN</div>
+          <dl class="quick-facts">
+            <div>
+              <dt>Focus</dt>
+              <dd id="profileFocus">Automation</dd>
+            </div>
+            <div>
+              <dt data-i18n="styleLabel">Style</dt>
+              <dd id="profileStyle">Data-driven</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section service-strip" id="services">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="servicesEyebrow">Freelance services</p>
+            <h2 data-i18n="servicesTitle">What clients can hire me for</h2>
+          </div>
+          <p data-i18n="servicesIntro">Focused project types that fit Fiverr gigs and small business needs.</p>
+        </div>
+        <div class="service-grid">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="serviceAutomationTitle">n8n & AI automation</h3>
+            <p data-i18n="serviceAutomationText">Automate lead handling, internal alerts, reporting, data sync, approvals and AI classification flows.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="serviceWebsiteTitle">Business landing pages</h3>
+            <p data-i18n="serviceWebsiteText">Clean responsive websites for local businesses, services, portfolios and campaign pages.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="serviceWebappTitle">Lightweight web apps</h3>
+            <p data-i18n="serviceWebappText">Small dashboards, admin panels, CRUD tools and internal apps with practical data workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compact-section" id="expertise">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="expertiseEyebrow">Core strengths</p>
+            <h2 data-i18n="expertiseTitle">Expertise</h2>
+          </div>
+          <p data-i18n="expertiseIntro">Practical engineering experience across automation, data workflows and full-stack web tools.</p>
+        </div>
+        <div class="expertise-grid" id="expertiseGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section compact-section" id="experience">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="experienceEyebrow">Recent work</p>
+            <h2 data-i18n="experienceTitle">Experience</h2>
+          </div>
+          <p data-i18n="experienceIntro">Selected roles that shaped the current focus of this portfolio.</p>
+        </div>
+        <div class="timeline" id="experienceList" aria-live="polite"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="selectedWork">Selected work</p>
+            <h2 data-i18n="projectsTitle">Projects</h2>
+          </div>
+          <p data-i18n="projectsIntro">A concise selection of projects, with technologies and useful links close at hand.</p>
+        </div>
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section estimate-section" id="estimate">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="estimateEyebrow">Project estimate</p>
+            <h2 data-i18n="estimateTitle">Cost calculator</h2>
+          </div>
+          <p data-i18n="estimateIntro">A quick starting estimate for a website or an automation workflow. Final pricing depends on scope and integrations.</p>
+        </div>
+
+        <div class="calculator" aria-live="polite">
+          <div class="calculator-controls">
+            <div class="estimate-tabs" role="tablist" aria-label="Estimate type">
+              <button class="active" type="button" data-estimate-type="website" data-i18n="websiteTab">Website</button>
+              <button type="button" data-estimate-type="automation" data-i18n="automationTab">Automation</button>
+            </div>
+
+            <div class="estimate-form active" data-estimate-form="website">
+              <label>
+                <span data-i18n="websitePages">Pages</span>
+                <input id="websitePages" type="range" min="1" max="12" value="4">
+                <strong data-output-for="websitePages">4</strong>
+              </label>
+              <label>
+                <span data-i18n="websiteComplexity">Complexity</span>
+                <select id="websiteComplexity">
+                  <option value="1" data-i18n="complexitySimple">Simple presentation</option>
+                  <option value="1.35" data-i18n="complexityBusiness">Business website</option>
+                  <option value="1.75" data-i18n="complexityApp">Web app / dashboard</option>
+                </select>
+              </label>
+              <label class="check-row">
+                <input id="websiteAdmin" type="checkbox">
+                <span data-i18n="websiteAdmin">Admin panel / CMS</span>
+              </label>
+              <label class="check-row">
+                <input id="websiteLanguages" type="checkbox">
+                <span data-i18n="websiteLanguages">Multilingual version</span>
+              </label>
+            </div>
+
+            <div class="estimate-form" data-estimate-form="automation">
+              <label>
+                <span data-i18n="automationSteps">Workflow steps</span>
+                <input id="automationSteps" type="range" min="3" max="25" value="8">
+                <strong data-output-for="automationSteps">8</strong>
+              </label>
+              <label>
+                <span data-i18n="automationIntegrations">Integrations</span>
+                <input id="automationIntegrations" type="range" min="1" max="8" value="3">
+                <strong data-output-for="automationIntegrations">3</strong>
+              </label>
+              <label class="check-row">
+                <input id="automationAi" type="checkbox">
+                <span data-i18n="automationAi">AI analysis / classification</span>
+              </label>
+              <label class="check-row">
+                <input id="automationDashboard" type="checkbox">
+                <span data-i18n="automationDashboard">Dashboard or database tracking</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="estimate-result">
+            <p class="eyebrow" data-i18n="estimateResultLabel">Estimated range</p>
+            <strong id="estimateAmount">EUR 0 - 0</strong>
+            <p class="estimate-basis" id="estimateBasis"></p>
+            <div class="estimate-includes">
+              <h3 data-i18n="estimateIncludesTitle">What this usually includes</h3>
+              <ul id="estimateIncludes"></ul>
+            </div>
+            <p id="estimateNote"></p>
+            <a class="estimate-cta" id="estimateEmailLink" href="mailto:negaraalex25@gmail.com" data-i18n="estimateCta">Ask for a free consultation</a>
+            <p class="estimate-feedback" data-i18n="estimateFallback">If your email app does not open, write directly to negaraalex25@gmail.com.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow" data-i18n="contactEyebrow">Free project review</p>
+          <h2 data-i18n="contactTitle">Tell me about your project</h2>
+          <p data-i18n="contactIntro">Share the goal, current process and what you want to improve. I will reply with next steps and a realistic scope.</p>
+          <div class="contact-details">
+            <a id="emailLink" href="mailto:hello@example.com">hello@example.com</a>
+            <a id="phoneLink" class="hidden" href="tel:+37368126541">+373 68 126 541</a>
+            <span id="profileLocation">Chisinau, Moldova</span>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/negaraalex25@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New portfolio project request">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input id="contactRedirect" type="hidden" name="_next" value="">
+          <label>
+            <span data-i18n="formName">Name</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span data-i18n="formEmail">Email</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span data-i18n="formPhone">Phone optional</span>
+            <input type="tel" name="phone" autocomplete="tel">
+          </label>
+          <label>
+            <span data-i18n="formBudget">Estimated budget optional</span>
+            <select name="budget">
+              <option value="" data-i18n="formBudgetPlaceholder">Not sure yet</option>
+              <option value="Under EUR 200">Under EUR 200</option>
+              <option value="EUR 200 - 500">EUR 200 - 500</option>
+              <option value="EUR 500 - 1000">EUR 500 - 1000</option>
+              <option value="EUR 1000+">EUR 1000+</option>
+            </select>
+          </label>
+          <label class="full-span">
+            <span data-i18n="formIdea">Project idea</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="primary-button full-span" type="submit" data-i18n="formSubmit">Send project request</button>
+          <p class="form-note full-span" data-i18n="formNote">The form sends the request to my email. You can also contact me directly from Fiverr.</p>
+        </form>
+      </section>
+    </main>
+
+    <dialog class="project-dialog" id="projectDialog" aria-labelledby="projectDialogTitle">
+      <div class="project-dialog-content">
+        <button class="dialog-close" id="projectDialogClose" type="button" aria-label="Close project details">×</button>
+        <div class="project-media" id="projectDialogMedia"></div>
+        <div class="project-dialog-body">
+          <p class="project-category" id="projectDialogCategory"></p>
+          <h2 id="projectDialogTitle">Project</h2>
+          <p id="projectDialogDescription"></p>
+          <dl class="project-detail-list">
+            <div>
+              <dt data-i18n="projectChallengeLabel">Challenge</dt>
+              <dd id="projectDialogChallenge"></dd>
+            </div>
+            <div>
+              <dt data-i18n="projectOutcomeLabel">Outcome</dt>
+              <dd id="projectDialogOutcome"></dd>
+            </div>
+          </dl>
+          <div class="tech-list" id="projectDialogTech"></div>
+          <div class="card-links" id="projectDialogLinks"></div>
+        </div>
+      </div>
+    </dialog>
+
+    <footer>
+      <span id="footerName">Portfolio</span>
+      <span data-i18n="footerNote">Updated locally through the admin panel.</span>
+    </footer>
+
+    <script src="/app.js?v=18" type="module"></script>
+  </body>
+</html>

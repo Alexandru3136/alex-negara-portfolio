@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Web application preview">
+  <rect width="960" height="540" fill="#f6f6f2"/>
+  <rect x="72" y="64" width="816" height="412" rx="8" fill="#ffffff" stroke="#deded8"/>
+  <rect x="72" y="64" width="816" height="56" rx="8" fill="#181818"/>
+  <circle cx="112" cy="92" r="7" fill="#ffffff"/>
+  <circle cx="138" cy="92" r="7" fill="#deded8"/>
+  <circle cx="164" cy="92" r="7" fill="#0f766e"/>
+  <rect x="112" y="160" width="180" height="252" rx="8" fill="#edf3f1"/>
+  <rect x="330" y="160" width="476" height="54" rx="8" fill="#f6f6f2" stroke="#deded8"/>
+  <rect x="330" y="242" width="476" height="54" rx="8" fill="#f6f6f2" stroke="#deded8"/>
+  <rect x="330" y="324" width="476" height="54" rx="8" fill="#f6f6f2" stroke="#deded8"/>
+  <text x="132" y="206" fill="#0b5f59" font-family="Arial, sans-serif" font-size="24" font-weight="700">RBAC</text>
+  <text x="132" y="246" fill="#0b5f59" font-family="Arial, sans-serif" font-size="18">CRUD</text>
+  <text x="132" y="282" fill="#0b5f59" font-family="Arial, sans-serif" font-size="18">SQLite</text>
+  <text x="360" y="194" fill="#181818" font-family="Arial, sans-serif" font-size="20" font-weight="700">Dispatch records</text>
+  <text x="360" y="276" fill="#181818" font-family="Arial, sans-serif" font-size="20" font-weight="700">User access workflows</text>
+  <text x="360" y="358" fill="#181818" font-family="Arial, sans-serif" font-size="20" font-weight="700">Optimized queries</text>
+</svg>

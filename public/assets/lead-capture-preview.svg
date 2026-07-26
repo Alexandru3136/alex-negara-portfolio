@@ -1,0 +1,18 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="560" fill="#F7F7F3"/>
+  <rect x="82" y="74" width="736" height="412" rx="18" fill="#FFFFFF" stroke="#D9D8D0" stroke-width="2"/>
+  <text x="124" y="136" fill="#171717" font-family="Arial, sans-serif" font-size="30" font-weight="700">Smart Lead Capture</text>
+  <text x="124" y="174" fill="#64676D" font-family="Arial, sans-serif" font-size="18">Form submissions routed into structured follow-up</text>
+  <rect x="126" y="228" width="178" height="74" rx="14" fill="#EAF2F0"/>
+  <text x="164" y="274" fill="#0B756D" font-family="Arial, sans-serif" font-size="18" font-weight="700">Webhook</text>
+  <path d="M316 265H386" stroke="#0B756D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M374 251L388 265L374 279" stroke="#0B756D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="404" y="228" width="178" height="74" rx="14" fill="#F4F4F1" stroke="#D9D8D0"/>
+  <text x="444" y="274" fill="#171717" font-family="Arial, sans-serif" font-size="18" font-weight="700">Google Sheets</text>
+  <path d="M594 265H664" stroke="#0B756D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M652 251L666 265L652 279" stroke="#0B756D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="682" y="228" width="92" height="74" rx="14" fill="#171717"/>
+  <text x="707" y="274" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">Email</text>
+  <rect x="126" y="352" width="648" height="48" rx="12" fill="#F4F4F1" stroke="#D9D8D0"/>
+  <text x="154" y="382" fill="#64676D" font-family="Arial, sans-serif" font-size="17">Validate data + notify team instantly</text>
+</svg>
