@@ -7,6 +7,8 @@ const estimateForms = document.querySelectorAll("[data-estimate-form]");
 const calculatorInputs = document.querySelectorAll(".calculator input, .calculator select");
 const projectDialog = document.querySelector("#projectDialog");
 const projectDialogClose = document.querySelector("#projectDialogClose");
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector("#primaryNav");
 
 const translations = {
   en: {
@@ -18,6 +20,8 @@ const translations = {
     navExperience: "Experience",
     navProjects: "Projects",
     navEstimate: "Estimate",
+    menuOpen: "Open menu",
+    menuClose: "Close menu",
     heroServiceLine: "n8n automations, AI workflows and business websites for small teams.",
     available: "Available for Fiverr-style projects",
     styleLabel: "Style",
@@ -109,6 +113,8 @@ const translations = {
     navExperience: "Experienta",
     navProjects: "Proiecte",
     navEstimate: "Estimare",
+    menuOpen: "Deschide meniul",
+    menuClose: "Inchide meniul",
     heroServiceLine: "Automatizari n8n, AI workflows si website-uri business pentru echipe mici.",
     available: "Disponibil pentru proiecte tip Fiverr",
     styleLabel: "Stil",
@@ -292,6 +298,22 @@ function applyTranslations() {
   });
 
   updateEstimate();
+  updateMobileMenuLabel();
+}
+
+function setMobileMenu(open) {
+  if (!navToggle || !navLinks) return;
+  navToggle.classList.toggle("active", open);
+  navLinks.classList.toggle("open", open);
+  navToggle.setAttribute("aria-expanded", String(open));
+  updateMobileMenuLabel();
+}
+
+function updateMobileMenuLabel() {
+  if (!navToggle) return;
+  const dictionary = translations[currentLanguage] || translations.en;
+  const isOpen = navToggle.classList.contains("active");
+  navToggle.setAttribute("aria-label", isOpen ? dictionary.menuClose : dictionary.menuOpen);
 }
 
 function linkTemplate(link) {
@@ -706,6 +728,20 @@ calculatorInputs.forEach((input) => {
   });
   updateRangeOutput(input);
 });
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    setMobileMenu(!navLinks.classList.contains("open"));
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setMobileMenu(false));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setMobileMenu(false);
+  });
+}
 
 projectDialogClose.addEventListener("click", () => {
   if (typeof projectDialog.close === "function") {

@@ -94,6 +94,50 @@ a {
   opacity: 0.45;
 }
 
+.nav-toggle {
+  align-items: center;
+  background: var(--text);
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  display: none;
+  height: 42px;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  width: 42px;
+}
+
+.nav-toggle span {
+  background: var(--panel);
+  border-radius: 999px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: transform 160ms ease, opacity 160ms ease;
+  width: 18px;
+}
+
+.nav-toggle span:nth-child(1) {
+  transform: translateY(-6px);
+}
+
+.nav-toggle span:nth-child(3) {
+  transform: translateY(6px);
+}
+
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
 .language-switcher {
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--line);
@@ -1063,8 +1107,70 @@ select:focus {
 
 @media (max-width: 560px) {
   .site-header {
-    align-items: start;
-    flex-direction: column;
+    background: rgba(246, 246, 242, 0.94);
+    display: grid;
+    gap: 12px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 14px 18px;
+  }
+
+  .brand {
+    min-height: 42px;
+    min-width: 0;
+  }
+
+  .brand span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: none;
+    gap: 6px;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+    justify-content: stretch;
+    padding: 10px;
+  }
+
+  .nav-links.open {
+    display: grid;
+  }
+
+  .nav-links a {
+    align-items: center;
+    background: #fbfbfa;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    display: inline-flex;
+    font-size: 0.92rem;
+    justify-content: center;
+    min-height: 42px;
+    padding: 9px 10px;
+  }
+
+  .admin-link {
+    opacity: 0.65;
+  }
+
+  .language-switcher {
+    grid-column: 1 / -1;
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .language-switcher button {
+    flex: 1;
+    min-height: 38px;
   }
 
   .hero {

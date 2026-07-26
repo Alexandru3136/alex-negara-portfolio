@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alex Negara | Automation & Web Development</title>
     <meta name="description" content="Freelance software engineer building n8n automations, AI workflows, business websites and lightweight web applications.">
-    <link rel="stylesheet" href="/styles.css?v=18">
+    <link rel="stylesheet" href="/styles.css?v=19">
   </head>
   <body>
     <header class="site-header">
@@ -13,7 +13,12 @@
         <span class="brand-mark">P</span>
         <span id="brandName">Portfolio</span>
       </a>
-      <nav class="nav-links" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu" data-i18n-attr="aria-label:menuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="primaryNav" aria-label="Main navigation">
         <a href="#about" data-i18n="navAbout">About</a>
         <a href="#services" data-i18n="navServices">Services</a>
         <a href="#experience" data-i18n="navExperience">Experience</a>
@@ -272,6 +277,6 @@
       <span data-i18n="footerNote">Updated locally through the admin panel.</span>
     </footer>
 
-    <script src="/app.js?v=18" type="module"></script>
+    <script src="/app.js?v=19" type="module"></script>
   </body>
 </html>
