@@ -17,7 +17,7 @@
       },
       "ru": {
         "role": "Software Engineer",
-        "about": "Выпускник Software Engineering и Information Technology с фокусом на автоматизацию рабочих процессов, интеграцию AI-систем, ETL/ELT pipelines, web scraping и продвинутое управление SQL-базами данных.",
+        "about": "Создаю n8n автоматизации, AI workflows, бизнес-сайты и легкие web apps для небольших команд, которым нужно меньше ручной работы и более понятные цифровые процессы.",
         "location": "Кишинев, Молдова"
       }
     },
@@ -42,7 +42,7 @@
           "title": "Automatizare si AI Workflows"
         },
         "ru": {
-          "title": "Автоматизация и AI workflows"
+          "title": "Автоматизация и AI Workflows"
         }
       }
     },
@@ -101,7 +101,7 @@
         },
         "ru": {
           "role": "Automation Developer",
-          "summary": "Разработал экосистему бизнес-автоматизации для контроля гарантий, операционных процессов, Telegram-ботов, автоматизированных баз данных и AI vision review flows."
+          "summary": "Разработал экосистему бизнес-автоматизации для warranty control, операционной обработки, Telegram bots, автоматизированных баз данных и AI vision review flows."
         }
       }
     },
@@ -123,7 +123,7 @@
         },
         "ru": {
           "role": "Преподаватель технических дисциплин",
-          "summary": "Преподавал frontend и backend технологии, вел технические лабораторные работы и участвовал в модернизации IT-куррикулума."
+          "summary": "Преподавал frontend и backend технологии, вел технические лабораторные работы и участвовал в модернизации IT curriculum."
         }
       }
     },
@@ -145,7 +145,7 @@
         },
         "ru": {
           "role": "Web Developer",
-          "summary": "Создал веб-приложение для логистики с защищенным CRUD, RBAC-аутентификацией и оптимизированными запросами к базе данных."
+          "summary": "Создал custom web application для логистики с secure CRUD workflows, RBAC authentication и оптимизированными database queries."
         }
       }
     }
@@ -164,10 +164,6 @@
         "ro": {
           "name": "Sistem Automatizat Warranty & Buy-Back",
           "description": "Ecosistem modular n8n pentru evaluarea garantiilor si buy-back, cu analiza AI, notificari Telegram, QR pentru plata si gestionare a erorilor."
-        },
-        "ru": {
-          "name": "Warranty Automation Ecosystem",
-          "description": "Система автоматизации для обработки гарантийных заявок, Telegram-ботов для клиентов и техников, автоматического отслеживания продуктов/заявок и AI-assisted photo/video review."
         }
       },
       "technologies": [
@@ -194,10 +190,6 @@
         "ro": {
           "name": "Automatizare Smart Lead Capture",
           "description": "Workflow automatizat pentru captarea leadurilor, validarea datelor, salvare in Google Sheets si notificari rapide de follow-up."
-        },
-        "ru": {
-          "name": "Smart Lead Capture Automation",
-          "description": "Automated workflow for lead capture, data validation, Google Sheets storage and fast follow-up notifications."
         }
       },
       "technologies": [
@@ -223,10 +215,6 @@
         "ro": {
           "name": "AI Lead Qualification & Smart Response",
           "description": "Automatizare cu AI pentru clasificarea cererilor, rutarea leadurilor si generarea raspunsurilor personalizate prin email."
-        },
-        "ru": {
-          "name": "AI Lead Qualification & Smart Response System",
-          "description": "AI-assisted automation for classifying inquiries, routing leads and generating personalized email responses."
         }
       },
       "technologies": [
@@ -252,10 +240,6 @@
         "ro": {
           "name": "AI-Powered Industry News Digest",
           "description": "Automatizare programata care colecteaza stiri din API-uri, le rezuma cu AI si trimite emailuri structurate."
-        },
-        "ru": {
-          "name": "AI-Powered Industry News Digest",
-          "description": "Scheduled automation that gathers industry news from APIs, summarizes it with AI and sends structured digest emails."
         }
       },
       "technologies": [
@@ -281,10 +265,6 @@
         "ro": {
           "name": "C.C. Climat Comfort",
           "description": "Landing page in romana pentru servicii de climatizare si instalatii, cu servicii, produse, proces, contact si linkuri sociale."
-        },
-        "ru": {
-          "name": "C.C. Climat Comfort",
-          "description": "Romanian landing page for climate comfort and home installation services with products, process and contact actions."
         }
       },
       "technologies": [
@@ -315,10 +295,6 @@
         "ro": {
           "name": "Dream Decor Studio Iceland",
           "description": "Landing page elegant pentru un studio de decor evenimente din Islanda, cu servicii, portofoliu, proces si formular de inquiry."
-        },
-        "ru": {
-          "name": "Dream Decor Studio Iceland",
-          "description": "Refined landing page for an Iceland-based event decoration studio with services, portfolio, process and inquiry flow."
         }
       },
       "technologies": [
@@ -349,10 +325,6 @@
         "ro": {
           "name": "Aplicatie Web pentru Logistics Dispatch",
           "description": "Aplicatie web custom pentru logistica, cu fluxuri CRUD securizate, control de acces pe roluri si interogari de baza de date optimizate."
-        },
-        "ru": {
-          "name": "Logistics Dispatch Web App",
-          "description": "Кастомное веб-приложение для логистики с защищенными CRUD workflows, role-based access control и оптимизированными запросами к базе данных."
         }
       },
       "technologies": [
@@ -379,10 +351,6 @@
         "ro": {
           "name": "Portofoliu Personal",
           "description": "O prezentare curata pentru proiecte, competente si date de contact."
-        },
-        "ru": {
-          "name": "Личное портфолио",
-          "description": "Чистая презентация проектов, навыков и контактной информации."
         }
       },
       "technologies": [
@@ -391,16 +359,7 @@
         "JavaScript"
       ],
       "category": "web",
-      "links": [
-        {
-          "label": "Demo",
-          "url": "https://example.com"
-        },
-        {
-          "label": "Code",
-          "url": "https://github.com/"
-        }
-      ]
+      "links": []
     },
     {
       "id": "task-dashboard",
@@ -416,10 +375,6 @@
         "ro": {
           "name": "Dashboard de Taskuri",
           "description": "Interfata simpla pentru urmarirea taskurilor active si a progresului zilnic."
-        },
-        "ru": {
-          "name": "Панель задач",
-          "description": "Простой интерфейс для отслеживания активных задач и ежедневного прогресса."
         }
       },
       "technologies": [
