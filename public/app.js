@@ -470,6 +470,26 @@ function renderProjects(projects) {
     const card = document.createElement("article");
     card.className = "project-card";
 
+    const preview = document.createElement("div");
+    preview.className = "project-card-preview";
+    if (project.mediaUrl && project.mediaType === "video") {
+      const video = document.createElement("video");
+      video.src = project.mediaUrl;
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.preload = "metadata";
+      preview.append(video);
+    } else if (project.mediaUrl) {
+      const image = document.createElement("img");
+      image.src = project.mediaUrl;
+      image.alt = `${getLocalizedValue(project, "name")} preview`;
+      image.loading = "lazy";
+      preview.append(image);
+    } else {
+      preview.textContent = project.category === "automation" ? "Workflow preview" : "Project preview";
+    }
+
     const title = document.createElement("h3");
     title.textContent = getLocalizedValue(project, "name");
 
@@ -486,7 +506,7 @@ function renderProjects(projects) {
       })
     );
 
-    const children = [title, description, techList];
+    const children = [preview, title, description, techList];
     if (project.links.length) {
       const links = document.createElement("div");
       links.className = "card-links";
