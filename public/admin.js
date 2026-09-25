@@ -16,11 +16,22 @@ const categoryLabels = {
   web: "Aplicatii web si site-uri"
 };
 
+function getCookie(name) {
+  return document.cookie
+    .split(";")
+    .map((cookie) => cookie.trim())
+    .filter((cookie) => cookie.startsWith(`${name}=`))
+    .map((cookie) => decodeURIComponent(cookie.slice(name.length + 1)))[0] || "";
+}
+
 async function api(path, options = {}) {
-  const response = await fetch(path, {
-    headers: { "Content-Type": "application/json", ...(options.headers || {}) },
-    ...options
-  });
+  const method = (options.method || "GET").toUpperCase();
+  const headers = { "Content-Type": "application/json", ...(options.headers || {}) };
+  // Send the CSRF token on state-changing requests (double-submit cookie).
+  if (["POST", "PUT", "DELETE"].includes(method)) {
+    headers["X-CSRF-Token"] = getCookie("portfolio_csrf");
+  }
+  const response = await fetch(path, { headers, ...options });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(data.error || "Cererea a esuat.");
   return data;
@@ -56,6 +67,25 @@ function fillForm(project = null) {
   projectForm.elements.linkUrl1.value = project?.links?.[0]?.url || "";
   projectForm.elements.linkLabel2.value = project?.links?.[1]?.label || "";
   projectForm.elements.linkUrl2.value = project?.links?.[1]?.url || "";
+
+  for (const lang of ["ro", "ru"]) {
+    for (const field of ["name", "description", "details", "challenge", "outcome"]) {
+      projectForm.elements[`${lang}_${field}`].value = project?.translations?.[lang]?.[field] || "";
+    }
+  }
+}
+
+function getTranslationsFromForm(formData) {
+  const translations = {};
+  for (const lang of ["ro", "ru"]) {
+    const entry = {};
+    for (const field of ["name", "description", "details", "challenge", "outcome"]) {
+      const value = String(formData.get(`${lang}_${field}`) || "").trim();
+      if (value) entry[field] = value;
+    }
+    if (Object.keys(entry).length) translations[lang] = entry;
+  }
+  return translations;
 }
 
 function renderAdminProjects() {
@@ -163,7 +193,8 @@ projectForm.addEventListener("submit", async (event) => {
       mediaUrl: formData.get("mediaUrl"),
       mediaType: formData.get("mediaType"),
       technologies: formData.get("technologies"),
-      links: getLinksFromForm(formData)
+      links: getLinksFromForm(formData),
+      translations: getTranslationsFromForm(formData)
     };
 
     await api(id ? `/api/projects/${id}` : "/api/projects", {

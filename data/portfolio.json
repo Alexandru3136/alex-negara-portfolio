@@ -163,7 +163,17 @@
       "translations": {
         "ro": {
           "name": "Sistem Automatizat Warranty & Buy-Back",
-          "description": "Ecosistem modular n8n pentru evaluarea garantiilor si buy-back, cu analiza AI, notificari Telegram, QR pentru plata si gestionare a erorilor."
+          "description": "Ecosistem modular n8n pentru evaluarea garantiilor si buy-back, cu analiza AI, notificari Telegram, QR pentru plata si gestionare a erorilor.",
+          "details": "Sistem de automatizare de tip enterprise, impartit in 4-5 workflow-uri n8n conectate. Preia datele clientilor dintr-o pagina web, evalueaza tehnic cu AI, trimite alerte adminului, notifica clientii, genereaza coduri QR pentru verificarea platii de buy-back si include un flux dedicat de recuperare pentru sesiuni esuate sau decizii AI incerte.",
+          "challenge": "Evaluarea garantiilor si a buy-back-ului necesita verificari manuale ale dispozitivelor, comunicare dispersata cu clientii, actualizari repetate din partea adminului si o gestionare fragila a cazurilor limita, precum poze neclare sau formulare incomplete.",
+          "outcome": "Am construit un workflow modular, gata de productie, cu evaluare AI, verificare umana a exceptiilor, actiuni de admin prin Telegram, livrare dinamica a platii prin QR si gestionare centralizata a erorilor."
+        },
+        "ru": {
+          "name": "Автоматизированная система гарантии и trade-in оценки",
+          "description": "Модульная n8n экосистема для оценки гарантии и trade-in электроники: AI-анализ, клиентские сценарии, Telegram-уведомления, QR-выплаты и обработка ошибок.",
+          "details": "Автоматизация корпоративного уровня, разделенная на 4-5 связанных n8n workflows. Обрабатывает данные клиентов с веб-страницы, техническую AI-оценку, уведомления администратору и клиентам, генерацию QR-кодов для проверки trade-in выплат и отдельный процесс восстановления для неудачных сессий или неоднозначных решений AI.",
+          "challenge": "Оценка гарантии и trade-in требовала ручной проверки устройств, разрозненной коммуникации с клиентами, повторяющихся обновлений от администратора и хрупкой обработки крайних случаев, таких как нечеткие фото или неполные формы.",
+          "outcome": "Создан модульный production-ready workflow с AI-оценкой, проверкой исключений с участием человека, действиями администратора через Telegram, динамической QR-выплатой и централизованной обработкой ошибок."
         }
       },
       "technologies": [
@@ -189,7 +199,17 @@
       "translations": {
         "ro": {
           "name": "Automatizare Smart Lead Capture",
-          "description": "Workflow automatizat pentru captarea leadurilor, validarea datelor, salvare in Google Sheets si notificari rapide de follow-up."
+          "description": "Workflow automatizat pentru captarea leadurilor, validarea datelor, salvare in Google Sheets si notificari rapide de follow-up.",
+          "details": "Automatizare de gestionare a leadurilor, construita pentru businessuri mici care primesc cereri prin formulare web. Workflow-ul preia cererile, valideaza datele, salveaza inregistrarile in Google Sheets, trimite emailuri de confirmare si alerteaza echipa instant.",
+          "challenge": "Multe businessuri colecteaza leaduri, dar raspund greu pentru ca datele din formulare sunt procesate manual, iar follow-up-ul nu este structurat.",
+          "outcome": "Am redus procesarea manuala a datelor, am imbunatatit viteza de raspuns si am creat un proces mai curat de gestionare a leadurilor, cu salvare si notificari automate."
+        },
+        "ru": {
+          "name": "Автоматизация Smart Lead Capture",
+          "description": "Автоматизированный workflow приема лидов: валидация форм, хранение структурированных данных и мгновенные follow-up уведомления.",
+          "details": "Автоматизация управления лидами для малого бизнеса, который собирает заявки через веб-формы. Workflow принимает заявки, валидирует данные, сохраняет записи в Google Sheets, отправляет письма-подтверждения и мгновенно уведомляет команду.",
+          "challenge": "Многие компании собирают лиды, но отвечают медленно, потому что данные форм обрабатываются вручную, а follow-up не структурирован.",
+          "outcome": "Сократил ручную обработку данных, повысил скорость ответа и создал более чистый процесс управления лидами с автоматическим хранением и уведомлениями."
         }
       },
       "technologies": [
@@ -214,7 +234,17 @@
       "translations": {
         "ro": {
           "name": "AI Lead Qualification & Smart Response",
-          "description": "Automatizare cu AI pentru clasificarea cererilor, rutarea leadurilor si generarea raspunsurilor personalizate prin email."
+          "description": "Automatizare cu AI pentru clasificarea cererilor, rutarea leadurilor si generarea raspunsurilor personalizate prin email.",
+          "details": "Sistem de calificare a leadurilor care preia cererile din formulare, le salveaza in Google Sheets, foloseste un agent AI pentru a analiza si clasifica fiecare cerere, ruteaza leadul in functie de tipul continutului si trimite raspunsuri personalizate structurate.",
+          "challenge": "Un volum mare de cereri poate genera raspunsuri lente, comunicare inconsecventa si oportunitati pierdute atunci cand fiecare cerere este verificata manual.",
+          "outcome": "Am automatizat calificarea si generarea raspunsurilor, imbunatatind consecventa si reducand timpul necesar pentru a analiza si raspunde leadurilor noi."
+        },
+        "ru": {
+          "name": "AI-квалификация лидов и умные ответы",
+          "description": "Автоматизация с AI: классификация входящих заявок, маршрутизация запросов и генерация персонализированных email-ответов.",
+          "details": "Система квалификации лидов, которая принимает заявки из форм, сохраняет их в Google Sheets, использует AI-агента для анализа и классификации каждого запроса, маршрутизирует лид по типу контента и отправляет структурированные персонализированные ответы.",
+          "challenge": "Большой объем заявок может приводить к медленным ответам, непоследовательной коммуникации и упущенным возможностям, когда каждый запрос проверяется вручную.",
+          "outcome": "Автоматизировал квалификацию и генерацию ответов, повысив последовательность и сократив время на обработку и ответ новым лидам."
         }
       },
       "technologies": [
@@ -239,7 +269,17 @@
       "translations": {
         "ro": {
           "name": "AI-Powered Industry News Digest",
-          "description": "Automatizare programata care colecteaza stiri din API-uri, le rezuma cu AI si trimite emailuri structurate."
+          "description": "Automatizare programata care colecteaza stiri din API-uri, le rezuma cu AI si trimite emailuri structurate.",
+          "details": "Automatizare de research pentru echipe de continut sau business. Ruleaza programat, preia stiri din API-uri externe, combina mai multe surse de date, rezuma cele mai relevante elemente cu AI si livreaza digest-uri email formatate.",
+          "challenge": "Echipele petrec deseori ore intregi colectand, filtrand si rezumand manual noutatile din industrie, ceea ce face procesul repetitiv si inconsecvent.",
+          "outcome": "Am creat un workflow de monitorizare scalabil care economiseste timp de research si livreaza actualizari consecvente in mod automat."
+        },
+        "ru": {
+          "name": "AI-дайджест отраслевых новостей",
+          "description": "Запланированная автоматизация: сбор отраслевых новостей из API, суммаризация контента с AI и отправка структурированных email-дайджестов.",
+          "details": "Research-автоматизация для контентных и бизнес-команд. Работает по расписанию, получает новости из внешних API, объединяет несколько источников данных, суммаризирует наиболее релевантные материалы с AI и доставляет форматированные email-дайджесты.",
+          "challenge": "Команды часто тратят часы на ручной сбор, фильтрацию и суммаризацию отраслевых обновлений, что делает процесс повторяющимся и непоследовательным.",
+          "outcome": "Создал масштабируемый workflow мониторинга, который экономит время на research и автоматически доставляет консистентные обновления."
         }
       },
       "technologies": [
@@ -264,7 +304,17 @@
       "translations": {
         "ro": {
           "name": "C.C. Climat Comfort",
-          "description": "Landing page in romana pentru servicii de climatizare si instalatii, cu servicii, produse, proces, contact si linkuri sociale."
+          "description": "Landing page in romana pentru servicii de climatizare si instalatii, cu servicii, produse, proces, contact si linkuri sociale.",
+          "details": "Website business practic pentru C.C. Climat Comfort, axat pe aer conditionat, pompe de caldura, ventilatie, sisteme sanitare, filtre de apa si centrale termice. Pagina combina o prezentare clara a serviciilor cu actiuni directe de apel, detalii de adresa, sectiuni orientate pe produse si linkuri catre Instagram si TikTok.",
+          "challenge": "Businessul avea nevoie de o prezenta web prietenoasa cu mobilul, care sa transforme vizitatorii din retelele sociale in apeluri, vizite la magazin sau cereri de instalare.",
+          "outcome": "Am construit un landing page responsive si clar, cu navigare pe servicii, butoane de apel, copierea numarului de telefon ca alternativa pentru browserele din aplicatii, detalii de locatie si mesaje concise despre consultanta, vanzare, instalare si service."
+        },
+        "ru": {
+          "name": "C.C. Climat Comfort",
+          "description": "Landing page на румынском для бизнеса по климатическому комфорту и установке: услуги, продукты, процесс, контакты и ссылки на соцсети.",
+          "details": "Практичный бизнес-сайт для C.C. Climat Comfort, посвященный кондиционерам, тепловым насосам, вентиляции, сантехническим системам, фильтрам для воды и отопительным котлам. Страница объединяет понятный обзор услуг с прямыми звонками, адресом, продуктовыми секциями и ссылками на Instagram и TikTok.",
+          "challenge": "Бизнесу нужно было мобильное веб-присутствие, способное превращать посетителей из соцсетей в звонки, визиты в магазин или заявки на установку.",
+          "outcome": "Создал понятный responsive landing page с навигацией по услугам, кнопками звонка, копированием телефона для встроенных браузеров, деталями локации и лаконичными сообщениями о консультации, продаже, установке и сервисе."
         }
       },
       "technologies": [
@@ -294,7 +344,17 @@
       "translations": {
         "ro": {
           "name": "Dream Decor Studio Iceland",
-          "description": "Landing page elegant pentru un studio de decor evenimente din Islanda, cu servicii, portofoliu, proces si formular de inquiry."
+          "description": "Landing page elegant pentru un studio de decor evenimente din Islanda, cu servicii, portofoliu, proces si formular de inquiry.",
+          "details": "Website public rafinat pentru Dream Decor Studio Iceland, construit in jurul stilizarii elegante a evenimentelor, decorului de nunta, sarbatorilor private si instalatiilor sezoniere. Pagina ghideaza vizitatorii de la povestea studioului si prezentarea serviciilor catre inspiratie din portofoliu si o cerere de consultanta.",
+          "challenge": "Brandul avea nevoie de o prezenta online premium care sa transmita atmosfera si incredere, pastrand in acelasi timp un drum simplu catre cerere.",
+          "outcome": "Am creat o experienta de landing responsive, cu sectiuni clare de servicii, storytelling orientat pe portofoliu, explicarea procesului si indemnuri directe de a rezerva sau descrie un eveniment."
+        },
+        "ru": {
+          "name": "Dream Decor Studio Iceland",
+          "description": "Изысканный landing page для студии оформления мероприятий из Исландии: услуги, направления портфолио, процесс и форма заявки.",
+          "details": "Отточенный публичный сайт для Dream Decor Studio Iceland, построенный вокруг элегантного оформления мероприятий, свадебного декора, частных праздников и сезонных инсталляций. Страница ведет посетителей от истории студии и обзора услуг к вдохновению из портфолио и заявке на консультацию.",
+          "challenge": "Бренду нужно было премиальное онлайн-присутствие, передающее атмосферу и доверие, сохраняя простой путь к заявке.",
+          "outcome": "Создал responsive landing с понятными секциями услуг, storytelling на основе портфолио, объяснением процесса и прямыми призывами забронировать или описать мероприятие."
         }
       },
       "technologies": [
@@ -324,7 +384,17 @@
       "translations": {
         "ro": {
           "name": "Aplicatie Web pentru Logistics Dispatch",
-          "description": "Aplicatie web custom pentru logistica, cu fluxuri CRUD securizate, control de acces pe roluri si interogari de baza de date optimizate."
+          "description": "Aplicatie web custom pentru logistica, cu fluxuri CRUD securizate, control de acces pe roluri si interogari de baza de date optimizate.",
+          "details": "Aplicatie web custom pentru o companie de logistica si dispecerat de transport, construita pentru a organiza datele operationale, a sustine fluxuri de lucru securizate si a face mai usoare operatiunile frecvente pe baza de date.",
+          "challenge": "Compania avea nevoie de un instrument intern personalizat, in locul urmaririi manuale dispersate si a muncii repetitive pe baza de date.",
+          "outcome": "Am livrat fluxuri CRUD securizate, autentificare RBAC si interogari de baza de date optimizate pentru operatiunile zilnice de logistica."
+        },
+        "ru": {
+          "name": "Web-приложение для логистического диспетчинга",
+          "description": "Кастомное логистическое web-приложение с безопасными CRUD-процессами, ролевым контролем доступа и оптимизированными запросами к базе данных.",
+          "details": "Кастомное web-приложение для компании логистики и грузового диспетчинга, созданное для организации операционных данных, поддержки безопасных пользовательских сценариев и упрощения частых операций с базой данных.",
+          "challenge": "Компании нужен был индивидуальный внутренний инструмент вместо разрозненного ручного учета и повторяющейся работы с базой данных.",
+          "outcome": "Реализовал безопасные CRUD-процессы, RBAC-аутентификацию и оптимизированные запросы к базе данных для повседневных логистических операций."
         }
       },
       "technologies": [
@@ -350,7 +420,17 @@
       "translations": {
         "ro": {
           "name": "Portofoliu Personal",
-          "description": "O prezentare curata pentru proiecte, competente si date de contact."
+          "description": "O prezentare curata pentru proiecte, competente si date de contact.",
+          "details": "Aplicatie de portofoliu minimalista, cu pagini publice read-only, suport multilingv, categorii de proiecte, calculator de cost si un panou admin pentru gestionarea proiectelor.",
+          "challenge": "Portofoliul trebuia sa prezinte munca de software engineering, automatizare si web, fara sa amestece toate proiectele intr-o lista neclara.",
+          "outcome": "Am creat un portofoliu structurat, cu proiecte gestionate din admin, categorii de proiecte si un drum mai clar pentru clientii potentiali de a cere consultanta."
+        },
+        "ru": {
+          "name": "Личное портфолио",
+          "description": "Чистая презентация проектов, навыков и контактных данных.",
+          "details": "Минималистичное приложение-портфолио с публичными read-only страницами, мультиязычностью, категориями проектов, калькулятором стоимости и админ-панелью для управления проектами.",
+          "challenge": "Портфолио должно было представить работу в software engineering, автоматизации и web, не смешивая все проекты в один непонятный список.",
+          "outcome": "Создал структурированное портфолио с управляемыми через админку проектами, категориями и более понятным путем для потенциальных клиентов запросить консультацию."
         }
       },
       "technologies": [
@@ -374,7 +454,17 @@
       "translations": {
         "ro": {
           "name": "Dashboard de Taskuri",
-          "description": "Interfata simpla pentru urmarirea taskurilor active si a progresului zilnic."
+          "description": "Interfata simpla pentru urmarirea taskurilor active si a progresului zilnic.",
+          "details": "Concept de dashboard usor pentru urmarirea taskurilor active, a progresului zilnic si a statusului proiectelor, intr-o interfata vizuala simpla.",
+          "challenge": "Echipele mici au nevoie de o modalitate compacta de a vedea ce este activ, ce este blocat si ce s-a schimbat recent.",
+          "outcome": "Am proiectat un model clar de dashboard, cu date structurate de proiecte/taskuri si vizibilitate simpla a statusului."
+        },
+        "ru": {
+          "name": "Дашборд задач",
+          "description": "Простой интерфейс для отслеживания активных задач и ежедневного прогресса.",
+          "details": "Легкий концепт дашборда для отслеживания активных задач, ежедневного прогресса и статуса проектов в простом визуальном интерфейсе.",
+          "challenge": "Небольшим командам нужен компактный способ видеть, что активно, что заблокировано и что недавно изменилось.",
+          "outcome": "Спроектировал понятный паттерн дашборда со структурированными данными проектов/задач и простой видимостью статуса."
         }
       },
       "technologies": [

@@ -64,6 +64,25 @@
               Rezultat / outcome
               <textarea name="outcome" rows="3" placeholder="Ce rezultat a produs sau ce valoare aduce?"></textarea>
             </label>
+
+            <details class="translation-block">
+              <summary>Traducere romana (RO) - optional</summary>
+              <label>Nume (RO)<input name="ro_name" type="text"></label>
+              <label>Descriere (RO)<textarea name="ro_description" rows="3"></textarea></label>
+              <label>Detalii (RO)<textarea name="ro_details" rows="3"></textarea></label>
+              <label>Problema (RO)<textarea name="ro_challenge" rows="2"></textarea></label>
+              <label>Rezultat (RO)<textarea name="ro_outcome" rows="2"></textarea></label>
+            </details>
+
+            <details class="translation-block">
+              <summary>Traducere rusa (RU) - optional</summary>
+              <label>Nume (RU)<input name="ru_name" type="text"></label>
+              <label>Descriere (RU)<textarea name="ru_description" rows="3"></textarea></label>
+              <label>Detalii (RU)<textarea name="ru_details" rows="3"></textarea></label>
+              <label>Problema (RU)<textarea name="ru_challenge" rows="2"></textarea></label>
+              <label>Rezultat (RU)<textarea name="ru_outcome" rows="2"></textarea></label>
+            </details>
+
             <label>
               Categorie
               <select name="category" required>
@@ -114,6 +133,6 @@
       </section>
     </main>
 
-    <script src="/admin.js?v=10" type="module"></script>
+    <script src="/admin.js?v=12" type="module"></script>
   </body>
 </html>
