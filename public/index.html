@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css?v=21">
+    <link rel="stylesheet" href="/styles.css?v=22">
   </head>
   <body>
     <header class="site-header">
@@ -112,6 +112,38 @@
         </div>
       </section>
 
+      <section class="section testimonials-section" id="testimonials">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="testimonialsEyebrow">Client feedback</p>
+            <h2 data-i18n="testimonialsTitle">What clients say</h2>
+          </div>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <p data-i18n="testimonial1Text"></p>
+            <footer>
+              <strong data-i18n="testimonial1Author"></strong>
+              <span data-i18n="testimonial1Role"></span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p data-i18n="testimonial2Text"></p>
+            <footer>
+              <strong data-i18n="testimonial2Author"></strong>
+              <span data-i18n="testimonial2Role"></span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p data-i18n="testimonial3Text"></p>
+            <footer>
+              <strong data-i18n="testimonial3Author"></strong>
+              <span data-i18n="testimonial3Role"></span>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
       <section class="section compact-section" id="expertise">
         <div class="section-heading">
           <div>
@@ -123,6 +155,37 @@
         <div class="expertise-grid" id="expertiseGrid" aria-live="polite"></div>
       </section>
 
+      <section class="section process-section" id="process">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="processEyebrow">How I work</p>
+            <h2 data-i18n="processTitle">From idea to delivery</h2>
+          </div>
+        </div>
+        <div class="process-grid">
+          <article class="process-step">
+            <span class="process-number">01</span>
+            <h3 data-i18n="processStep1Title">Brief</h3>
+            <p data-i18n="processStep1Text"></p>
+          </article>
+          <article class="process-step">
+            <span class="process-number">02</span>
+            <h3 data-i18n="processStep2Title">Build</h3>
+            <p data-i18n="processStep2Text"></p>
+          </article>
+          <article class="process-step">
+            <span class="process-number">03</span>
+            <h3 data-i18n="processStep3Title">Test</h3>
+            <p data-i18n="processStep3Text"></p>
+          </article>
+          <article class="process-step">
+            <span class="process-number">04</span>
+            <h3 data-i18n="processStep4Title">Deliver</h3>
+            <p data-i18n="processStep4Text"></p>
+          </article>
+        </div>
+      </section>
+
       <section class="section compact-section" id="experience">
         <div class="section-heading">
           <div>
@@ -132,6 +195,18 @@
           <p data-i18n="experienceIntro">Selected roles that shaped the current focus of this portfolio.</p>
         </div>
         <div class="timeline" id="experienceList" aria-live="polite"></div>
+      </section>
+
+      <section class="section about-section" id="about-me">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="aboutEyebrow">About me</p>
+            <h2 data-i18n="aboutTitle">The person behind the code</h2>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-bio" data-i18n="aboutBio"></p>
+        </div>
       </section>
 
       <section class="section" id="projects">
@@ -219,6 +294,56 @@
             <a class="estimate-cta" id="estimateEmailLink" href="mailto:negaraalex25@gmail.com" data-i18n="estimateCta">Ask for a free consultation</a>
             <p class="estimate-feedback" data-i18n="estimateFallback">If your email app does not open, write directly to negaraalex25@gmail.com.</p>
           </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="faqEyebrow">Common questions</p>
+            <h2 data-i18n="faqTitle">FAQ</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary data-i18n="faq1Q"></summary>
+            <p data-i18n="faq1A"></p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq2Q"></summary>
+            <p data-i18n="faq2A"></p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq3Q"></summary>
+            <p data-i18n="faq3A"></p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq4Q"></summary>
+            <p data-i18n="faq4A"></p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section resources-section" id="resources">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="resourcesEyebrow">Resources</p>
+            <h2 data-i18n="resourcesTitle">Useful reads</h2>
+          </div>
+        </div>
+        <div class="resources-grid">
+          <article class="resource-card">
+            <h3 data-i18n="resource1Title"></h3>
+            <p data-i18n="resource1Text"></p>
+          </article>
+          <article class="resource-card">
+            <h3 data-i18n="resource2Title"></h3>
+            <p data-i18n="resource2Text"></p>
+          </article>
+          <article class="resource-card">
+            <h3 data-i18n="resource3Title"></h3>
+            <p data-i18n="resource3Text"></p>
+          </article>
         </div>
       </section>
 
